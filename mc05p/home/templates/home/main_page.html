@@ -1,0 +1,350 @@
+{% extends "home/base.html" %}
+
+{% load static %}
+
+
+{% block mainpage %}
+
+  
+   
+  <div class="layout">
+
+    <div class="layout__inner">
+
+      
+      <div class="header">
+
+        <span class="header__bg">
+        </span>
+
+        <div class="header__inner">
+
+          {% include "home/logo.html" %}
+
+          <div class="navigation-container">
+
+            <ul class="navigation">
+
+              <li class="selected">
+
+                <b class="selected">
+                  MediCare Clinic
+                </b>
+
+                <ul>
+
+                  <li>
+                    <a href="travma">
+                      Центр травматологии и ортопедии
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="gynecology">
+                      Гинекология и акушерство
+                    </a>
+                  </li>
+                  <li>
+                    <a href="urology">
+                      Урология и андрология
+                    </a>
+                  </li>
+                  <li>
+                    <a href="vaccine">
+                      Центр Вакцинации
+                    </a>
+                  </li>
+                  <li>
+                    <a href="laboratory">
+                      Анализы и лабораторные исследования
+                    </a>
+                  </li>
+                  <li>
+                    <a href="firstaid">
+                      Травмпункт
+                    </a>
+                  </li>
+                  <li>
+                    <a href="online">
+                      On-line консультации
+                    </a>
+                  </li>
+                  <li>
+                    <a href="callhome">
+                      Медицинская помощь на дому
+                    </a>
+                  </li>
+                  <li>
+                    <a href="vacancies">
+                      Вакансии
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li>
+
+                <a href="about">
+                  О нас
+                </a>
+
+              </li>
+
+              <li>
+
+                <a href="occasions">
+                  События
+                </a>
+
+              </li>
+
+              <li>
+
+                <a href="articles">
+                  Статьи
+                </a>
+
+              </li>
+
+            </ul>
+
+          </div>
+          
+          {% include "home/burger.html" %}
+
+        </div>
+
+      </div>
+    
+
+      {% include "home/mainblock.html" %}
+
+    </div>
+
+    {% include "home/footer.html" %}
+
+  </div>
+
+  <div class="bg">
+
+    <img alt="" width="300" height="300" src="{% static 'img/main-bg.jpg' %}" />
+    
+  </div>
+
+  <div class="popup popup_search not_display">
+
+    <span class="popup__close">
+      ×
+    </span>
+
+    <div class="popup__content">
+
+      {% include "home/logo.html" %}
+
+      <div class="popup__content-inner">
+
+        <div class="search">
+
+          <form class="search__form" action="/search/" method="get">
+
+            <div class="search__field">
+
+              <input type="text" name="text" class="search__input" placeholder="Поиск по сайту" data-xp="required: true" />
+
+              <button type="submit" class="btn search__btn" data-xp="enabled_on_completed: true">
+                Найти
+              </button>
+
+            </div>
+
+          </form>
+
+        </div>
+
+        <ul class="sitemap">
+
+          <li class="selected">
+        
+            <b class="selected">
+              MediCare Clinic
+            </b>
+        
+            <ul>
+
+                <li>
+                  <a href="travma">
+                    Центр травматологии и ортопедии
+                  </a>
+                </li>
+
+                <li>
+                  <a href="gynecology">
+                    Гинекология и акушерство
+                  </a>
+                </li>
+                <li>
+                  <a href="urology">
+                    Урология и андрология
+                  </a>
+                </li>
+                <li>
+                  <a href="vaccine">
+                    Центр Вакцинации
+                  </a>
+                </li>
+                <li>
+                  <a href="laboratory">
+                    Анализы и лабораторные исследования
+                  </a>
+                </li>
+                <li>
+                  <a href="firstaid">
+                    Травмпункт
+                  </a>
+                </li>
+                <li>
+                  <a href="online">
+                    On-line консультации
+                  </a>
+                </li>
+                <li>
+                  <a href="callhome">
+                    Медицинская помощь на дому
+                  </a>
+                </li>
+                <li>
+                  <a href="vacancies">
+                    Вакансии
+                  </a>
+                </li>
+
+            </ul>
+        
+          </li>
+        
+          <li>
+        
+            <a href="/about">
+              О нас
+            </a>
+        
+            <ul class="">
+        
+              <li>
+                <a href="/about/staff/">
+                  Коллектив
+                </a>
+              </li>
+        
+              <li>
+                <a href="/about/reviews/">
+                  Отзывы
+                </a>
+              </li>
+        
+              <li>
+                <a href="/about/for_clients/">
+                  Нашим клиентам
+                </a>
+              </li>
+        
+              <li>
+                <a href="/about/contacts/">
+                  Контакты / Часы работы
+                </a>
+              </li>
+        
+              <li>
+                <a href="/about/partners/">
+                  Партнеры
+                </a>
+              </li>
+        
+              <li>
+                <a href="/about/pricelist/">
+                  Цены
+                </a>
+              </li>
+        
+              <li>
+                <a href="/about/excursion/">
+                  Экскурсия
+                </a>
+              </li>
+        
+              <li>
+                <a href="/about/history/">
+                  История
+                </a>
+              </li>
+        
+              <li>
+                <a href="/about/faq/">
+                  Вопросы и ответы
+                </a>
+              </li>
+        
+            </ul>
+        
+          </li>
+        
+          <li>
+        
+            <a href="/occasions/">
+              События
+            </a>
+        
+            <ul class="">
+        
+              <li>
+                <a href="/occasions/events/">
+                  Мероприятия
+                </a>
+              </li>
+        
+              <li>
+                <a href="/occasions/news/">
+                  Новости
+                </a>
+              </li>
+        
+              <li>
+                <a href="/occasions/promos/">
+                  Акции
+                </a>
+              </li>
+        
+            </ul>
+        
+          </li>
+        
+          <li>
+
+            <a href="/articles/">
+              Статьи
+            </a>
+
+          </li>
+        
+        </ul>
+
+        <div class="search-results-container">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+{% endblock mainpage %}
+
+    
+    
+
+ 
