@@ -44,36 +44,43 @@
                       Гинекология и акушерство
                     </a>
                   </li>
+
                   <li>
                     <a href="urology">
                       Урология и андрология
                     </a>
                   </li>
+
                   <li>
                     <a href="vaccine">
                       Центр Вакцинации
                     </a>
                   </li>
+
                   <li>
                     <a href="laboratory">
                       Анализы и лабораторные исследования
                     </a>
                   </li>
+
                   <li>
                     <a href="firstaid">
                       Травмпункт
                     </a>
                   </li>
+
                   <li>
                     <a href="online">
                       On-line консультации
                     </a>
                   </li>
+
                   <li>
                     <a href="callhome">
                       Медицинская помощь на дому
                     </a>
                   </li>
+
                   <li>
                     <a href="vacancies">
                       Вакансии
@@ -86,7 +93,7 @@
 
               <li>
 
-                <a href="about">
+                <a href="/about">
                   О нас
                 </a>
 
@@ -94,7 +101,7 @@
 
               <li>
 
-                <a href="occasions">
+                <a href="/occasions">
                   События
                 </a>
 
@@ -102,7 +109,7 @@
 
               <li>
 
-                <a href="articles">
+                <a href="/articles">
                   Статьи
                 </a>
 
@@ -125,6 +132,8 @@
 
     {% include "home/footer.html" %}
 
+    
+
   </div>
 
   <div class="bg">
@@ -144,24 +153,8 @@
       {% include "home/logo.html" %}
 
       <div class="popup__content-inner">
-
-        <div class="search">
-
-          <form class="search__form" action="/search/" method="get">
-
-            <div class="search__field">
-
-              <input type="text" name="text" class="search__input" placeholder="Поиск по сайту" data-xp="required: true" />
-
-              <button type="submit" class="btn search__btn" data-xp="enabled_on_completed: true">
-                Найти
-              </button>
-
-            </div>
-
-          </form>
-
-        </div>
+        
+        {% include "home/search.html" %}
 
         <ul class="sitemap">
 
@@ -174,48 +167,48 @@
             <ul>
 
                 <li>
-                  <a href="travma">
+                  <a href="/travma">
                     Центр травматологии и ортопедии
                   </a>
                 </li>
 
                 <li>
-                  <a href="gynecology">
+                  <a href="/gynecology">
                     Гинекология и акушерство
                   </a>
                 </li>
                 <li>
-                  <a href="urology">
+                  <a href="/urology">
                     Урология и андрология
                   </a>
                 </li>
                 <li>
-                  <a href="vaccine">
+                  <a href="/vaccine">
                     Центр Вакцинации
                   </a>
                 </li>
                 <li>
-                  <a href="laboratory">
+                  <a href="/laboratory">
                     Анализы и лабораторные исследования
                   </a>
                 </li>
                 <li>
-                  <a href="firstaid">
+                  <a href="/firstaid">
                     Травмпункт
                   </a>
                 </li>
                 <li>
-                  <a href="online">
+                  <a href="/online">
                     On-line консультации
                   </a>
                 </li>
                 <li>
-                  <a href="callhome">
+                  <a href="/callhome">
                     Медицинская помощь на дому
                   </a>
                 </li>
                 <li>
-                  <a href="vacancies">
+                  <a href="/vacancies">
                     Вакансии
                   </a>
                 </li>
@@ -233,55 +226,61 @@
             <ul class="">
         
               <li>
-                <a href="/about/staff/">
+                <a href="/about/staff">
                   Коллектив
                 </a>
               </li>
         
               <li>
-                <a href="/about/reviews/">
+                <a href="/about/reviews">
                   Отзывы
                 </a>
               </li>
         
               <li>
-                <a href="/about/for_clients/">
+                <a href="/about/for_clients">
                   Нашим клиентам
                 </a>
               </li>
         
               <li>
-                <a href="/about/contacts/">
+                <a href="/about/contacts">
                   Контакты / Часы работы
                 </a>
               </li>
         
               <li>
-                <a href="/about/partners/">
+                <a href="/about/partners">
                   Партнеры
                 </a>
               </li>
         
               <li>
-                <a href="/about/pricelist/">
+                <a href="/about/pricelist">
                   Цены
+                </a>
+              </li>
+
+              <li>
+                <a href="/about/license">
+                    Документы
                 </a>
               </li>
         
               <li>
-                <a href="/about/excursion/">
+                <a href="/about/excursion">
                   Экскурсия
                 </a>
               </li>
         
               <li>
-                <a href="/about/history/">
+                <a href="/about/history">
                   История
                 </a>
               </li>
         
               <li>
-                <a href="/about/faq/">
+                <a href="/about/faq">
                   Вопросы и ответы
                 </a>
               </li>
@@ -292,26 +291,26 @@
         
           <li>
         
-            <a href="/occasions/">
+            <a href="/occasions">
               События
             </a>
         
             <ul class="">
         
               <li>
-                <a href="/occasions/events/">
+                <a href="/occasions/events">
                   Мероприятия
                 </a>
               </li>
         
               <li>
-                <a href="/occasions/news/">
+                <a href="/occasions/news">
                   Новости
                 </a>
               </li>
         
               <li>
-                <a href="/occasions/promos/">
+                <a href="/occasions/promos">
                   Акции
                 </a>
               </li>
@@ -322,8 +321,10 @@
         
           <li>
 
-            <a href="/articles/">
+            <a href="/articles">
+
               Статьи
+
             </a>
 
           </li>
@@ -343,6 +344,7 @@
 
 
 {% endblock mainpage %}
+
 
     
     

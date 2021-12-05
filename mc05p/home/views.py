@@ -17,6 +17,10 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 def main_page(request):
     return render(request, 'home/main_page.html', {})
 
+#travma
+def travma(request):
+    return render(request, 'home/main/travma.html', {})
+
 #about
 def about(request):
     return render(request, 'home/about.html', {})

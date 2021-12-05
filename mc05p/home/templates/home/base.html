@@ -59,13 +59,35 @@
 
   <body id="home_page">
    
-    {% block mainpage %}
-    {% endblock mainpage %}
 
-    
-    
 
- 
+    <div id="content">
+
+      <div class="content__inner">
+
+        {% block mainpage %}
+        {% endblock mainpage %}
+    
+        {% block about %}
+        {% endblock about %}
+    
+        {% block occasions %}
+        {% endblock occasions %}
+    
+        {% block articles %}
+        {% endblock articles %}
+    
+        {% block travma %}
+        {% endblock travma %}
+
+        
+
+      </div>
+  
+    </div>
+
+
+
 
     <script src="{% static 'js/common.js' %}">
 

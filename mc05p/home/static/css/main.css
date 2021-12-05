@@ -914,7 +914,7 @@ ul.subnavigation {
   .header_fixed .logo {
     width: 30px;
     height: 30px;
-    padding-top: 0px; }
+    padding-top: 15px; }
   .header_fixed .navigation ul {
     opacity: 0;
     pointer-events: none; }

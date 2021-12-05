@@ -1,0 +1,438 @@
+{% extends "home/base.html" %}
+
+{% load static %}
+
+
+{% block travma %}
+
+	<div class="layout">
+
+		<div class="layout__inner">
+
+		
+			<div class="header">
+
+				<span class="header__bg">
+				</span>
+
+				<div class="header__inner">
+
+				{% include "home/logo.html" %}
+
+				<div class="navigation-container">
+
+					<ul class="navigation">
+
+					<li class="selected">
+
+						<b class="selected">
+						MediCare Clinic
+						</b>
+
+						<ul>
+
+						<li>
+							<a href="travma">
+							Центр травматологии и ортопедии
+							</a>
+						</li>
+
+						<li>
+							<a href="gynecology">
+							Гинекология и акушерство
+							</a>
+						</li>
+
+						<li>
+							<a href="urology">
+							Урология и андрология
+							</a>
+						</li>
+
+						<li>
+							<a href="vaccine">
+							Центр Вакцинации
+							</a>
+						</li>
+
+						<li>
+							<a href="laboratory">
+							Анализы и лабораторные исследования
+							</a>
+						</li>
+
+						<li>
+							<a href="firstaid">
+							Травмпункт
+							</a>
+						</li>
+
+						<li>
+							<a href="online">
+							On-line консультации
+							</a>
+						</li>
+
+						<li>
+							<a href="callhome">
+							Медицинская помощь на дому
+							</a>
+						</li>
+
+						<li>
+							<a href="vacancies">
+							Вакансии
+							</a>
+						</li>
+
+						</ul>
+
+					</li>
+
+					<li>
+
+						<a href="/about">
+						О нас
+						</a>
+
+					</li>
+
+					<li>
+
+						<a href="/occasions">
+						События
+						</a>
+
+					</li>
+
+					<li>
+
+						<a href="/articles">
+						Статьи
+						</a>
+
+					</li>
+
+					</ul>
+
+				</div>
+				
+				{% include "home/burger.html" %}
+
+				</div>
+
+			</div>
+		
+
+			<div class="main-top">
+
+				<h1 class="hyphenate">
+					Центр травматологии и ортопедии
+				</h1>
+
+				<div class="lead">
+					<p class="first_child ">
+						Травматология, ортопедия, протезирование. Специализация на спортивных травмах.
+					</p>
+					
+					<p class="last_child ">
+						
+						<nobr class="phone">+7 (812) 458-76-76</nobr>
+					</p>
+				</div>
+			
+			</div>
+				
+			<div class="main">
+
+				<div class="subservices">
+
+					<div class="subservices__item">
+
+						<h4>
+							<a href="/consultation/pregnancy_monitoring/">
+								Программы ведения беременности
+							</a>
+						</h4>
+
+						<div class="subservices__item-content">
+
+							<p class="first_child last_child ">
+								Гибкие программы дородового наблюдения. Только индивидуальный подход и постоянная связь с персональным врачом. Подготовка к естественным мягким родам, подготовка к оперативному родоразрешению, возможна госпитализация в собственный стационар. 
+							</p>
+
+						</div>
+
+					</div>
+
+					<div class="subservices__item">
+
+						<h4>
+							<a href="/consultation/pregnancy_monitoring/">
+								Программы ведения беременности
+							</a>
+						</h4>
+
+						<div class="subservices__item-content">
+
+							<p class="first_child last_child ">
+								Гибкие программы дородового наблюдения. Только индивидуальный подход и постоянная связь с персональным врачом. Подготовка к естественным мягким родам, подготовка к оперативному родоразрешению, возможна госпитализация в собственный стационар. 
+							</p>
+
+						</div>
+
+					</div>
+
+				
+				</div>
+
+				<div>
+					<br>
+				</div>
+					
+				<div class="fotorama-container">
+					
+					<div class="fotorama" data-loop="true" data-ratio="3/2">
+	
+						<img alt="" width="398" height="265" src="http://www.rd2.ru/files/-/47ab358a0090bff7d76e1bfd068e2efb/9.jpg" />
+						
+						<img alt="" width="398" height="265" src="http://www.rd2.ru/files/-/495b3cd5db9c624e547e0e3123e83f66/144A0555_copy.jpg" />
+						
+						<img alt="" width="397" height="265" src="http://www.rd2.ru/files/-/e0eee8371c21f0b52d11a8038d83d6bc/2.jpg" />
+						
+						<img alt="" width="398" height="265" src="http://www.rd2.ru/files/-/61de09e9f1909615d8f0ebfd4b052b9e/144A0606_copy.jpg" />
+					
+					</div>
+				
+				</div>
+
+			
+			</div>
+
+			
+
+		</div>
+
+		{% include "home/footer.html" %}
+
+		
+	
+	</div>
+	
+
+
+	<div class="bg">
+		
+		<img alt="" width="300" height="300" src="{% static 'img/main-bg.jpg' %}" />
+    
+  	</div>
+
+	<div class="popup popup_search not_display">
+
+		<span class="popup__close">
+			×
+		</span>
+
+		<div class="popup__content">
+
+			{% include "home/logo.html" %}
+
+			<div class="popup__content-inner">
+			
+				{% include "home/search.html" %}
+
+				<ul class="sitemap">
+					
+
+					<li class="selected">
+				
+						<b class="selected">
+						MediCare Clinic
+						</b>
+				
+						<ul>
+
+							<li>
+								<a href="/travma">
+									Центр травматологии и ортопедии
+								</a>
+							</li>
+
+							<li>
+								<a href="/gynecology">
+									Гинекология и акушерство
+								</a>
+							</li>
+
+							<li>
+								<a href="/urology">
+									Урология и андрология
+								</a>
+							</li>
+
+							<li>
+								<a href="/vaccine">
+									Центр Вакцинации
+								</a>
+							</li>
+
+							<li>
+								<a href="/laboratory">
+									Анализы и лабораторные исследования
+								</a>
+							</li>
+
+							<li>
+								<a href="/firstaid">
+									Травмпункт
+								</a>
+							</li>
+
+							<li>
+								<a href="/online">
+									On-line консультации
+								</a>
+							</li>
+
+							<li>
+								<a href="/callhome">
+									Медицинская помощь на дому
+								</a>
+							</li>
+
+							<li>
+								<a href="/vacancies">
+									Вакансии
+								</a>
+							</li>
+
+						</ul>
+					
+					</li>
+				
+					<li>
+						
+						<a href="/about">
+						О нас
+						</a>
+					
+						<ul class="">
+					
+							<li>
+								<a href="/about/staff">
+								Коллектив
+								</a>
+							</li>
+						
+							<li>
+								<a href="/about/reviews">
+								Отзывы
+								</a>
+							</li>
+						
+							<li>
+								<a href="/about/for_clients">
+								Нашим клиентам
+								</a>
+							</li>
+						
+							<li>
+								<a href="/about/contacts">
+								Контакты / Часы работы
+								</a>
+							</li>
+						
+							<li>
+								<a href="/about/partners">
+								Партнеры
+								</a>
+							</li>
+						
+							<li>
+								<a href="/about/pricelist">
+								Цены
+								</a>
+							</li>
+
+							<li>
+								<a href="/about/license">
+									Документы
+								</a>
+							</li>
+						
+							<li>
+								<a href="/about/excursion">
+								Экскурсия
+								</a>
+							</li>
+						
+							<li>
+								<a href="/about/history">
+								История
+								</a>
+							</li>
+						
+							<li>
+								<a href="/about/faq">
+								Вопросы и ответы
+								</a>
+							</li>
+					
+						</ul>
+					
+					</li>
+					
+					<li>
+					
+						<a href="/occasions">
+						События
+						</a>
+					
+						<ul class="">
+					
+							<li>
+								<a href="/occasions/events">
+								Мероприятия
+								</a>
+							</li>
+						
+							<li>
+								<a href="/occasions/news">
+								Новости
+								</a>
+							</li>
+						
+							<li>
+								<a href="/occasions/promos">
+								Акции
+								</a>
+							</li>
+					
+						</ul>
+					
+					</li>
+					
+					<li>
+
+						<a href="/articles">
+
+						Статьи
+
+						</a>
+
+					</li>
+				
+				</ul>
+
+				<div class="search-results-container">
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+{% endblock travma %}
+
