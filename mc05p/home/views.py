@@ -21,6 +21,38 @@ def main_page(request):
 def travma(request):
     return render(request, 'home/main/travma.html', {})
 
+#gynecology
+def gynecology(request):
+    return render(request, 'home/main/gynecology.html', {})
+
+#urology
+def urology(request):
+    return render(request, 'home/main/urology.html', {})
+
+#vaccine
+def vaccine(request):
+    return render(request, 'home/main/vaccine.html', {})
+
+#laboratory
+def laboratory(request):
+    return render(request, 'home/main/laboratory.html', {})
+
+#firstaid
+def firstaid(request):
+    return render(request, 'home/main/firstaid.html', {})
+
+#online
+def online(request):
+    return render(request, 'home/main/online.html', {})
+
+#callhome
+def callhome(request):
+    return render(request, 'home/main/callhome.html', {})
+
+#vacancies
+def vacancies(request):
+    return render(request, 'home/main/vacancies.html', {})
+
 #about
 def about(request):
     return render(request, 'home/about.html', {})
