@@ -16,6 +16,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 #main_page
 def main_page(request):
     return render(request, 'home/main_page.html', {})
+    
 
 #travma
 def travma(request):
@@ -53,9 +54,44 @@ def callhome(request):
 def vacancies(request):
     return render(request, 'home/main/vacancies.html', {})
 
+
 #about
 def about(request):
     return render(request, 'home/about.html', {})
+
+
+#staff
+def staff(request):
+    return render(request, 'home/about/staff.html', {})
+
+#reviews
+def reviews(request):
+    return render(request, 'home/about/reviews.html', {})
+
+#for_clients
+def for_clients(request):
+    return render(request, 'home/about/for_clients.html', {})
+
+#contacts
+def contacts(request):
+    return render(request, 'home/about/contacts.html', {})
+
+#partners
+def partners(request):
+    return render(request, 'home/about/partners.html', {})
+
+#pricelist
+def pricelist(request):
+    return render(request, 'home/about/pricelist.html', {})
+
+#license
+def license(request):
+    return render(request, 'home/about/license.html', {})
+
+#faq
+def faq(request):
+    return render(request, 'home/about/faq.html', {})
+
 
 #occasions
 def occasions(request):
